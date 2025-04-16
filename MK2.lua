@@ -22,22 +22,22 @@ Frame.BorderColor3 = Color3.fromRGB(103, 221, 213)
 Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
 Frame.Size = UDim2.new(0, 190, 0, 57)
 
-up.Name = "上"
+up.Name = "up"
 up.Parent = Frame
 up.BackgroundColor3 = Color3.fromRGB(79, 255, 152)
 up.Size = UDim2.new(0, 44, 0, 28)
 up.Font = Enum.Font.SourceSans
-up.Text = "下"
+up.Text = "上"
 up.TextColor3 = Color3.fromRGB(0, 0, 0)
 up.TextSize = 14.000
 
-down.Name = "113507810258466"
+down.Name = "down"
 down.Parent = Frame
 down.BackgroundColor3 = Color3.fromRGB(215, 255, 121)
 down.Position = UDim2.new(0, 0, 0.491228074, 0)
 down.Size = UDim2.new(0, 44, 0, 28)
 down.Font = Enum.Font.SourceSans
-down.Text = "down"
+down.Text = "下"
 down.TextColor3 = Color3.fromRGB(0, 0, 0)
 down.TextSize = 14.000
 
@@ -103,7 +103,7 @@ closebutton.Parent = main.Frame
 closebutton.BackgroundColor3 = Color3.fromRGB(225, 25, 0)
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 28)
-closebutton.Text = "X"
+closebutton.Text = "关闭"
 closebutton.TextSize = 30
 closebutton.Position =  UDim2.new(0, 0, -1, 27)
 
@@ -112,7 +112,7 @@ mini.Parent = main.Frame
 mini.BackgroundColor3 = Color3.fromRGB(192, 150, 230)
 mini.Font = "SourceSans"
 mini.Size = UDim2.new(0, 45, 0, 28)
-mini.Text = "T"
+mini.Text = "隐藏"
 mini.TextSize = 30
 mini.Position = UDim2.new(0, 44, -1, 27)
 
@@ -121,7 +121,7 @@ mini2.Parent = main.Frame
 mini2.BackgroundColor3 = Color3.fromRGB(192, 150, 230)
 mini2.Font = "SourceSans"
 mini2.Size = UDim2.new(0, 45, 0, 28)
-mini2.Text = "T"
+mini2.Text = "+"
 mini2.TextSize = 30
 mini2.Position = UDim2.new(0, 44, -1, 57)
 mini2.Visible = false
@@ -133,15 +133,7 @@ local speaker = game:GetService("Players").LocalPlayer
 local chr = game.Players.LocalPlayer.Character
 local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 
-nowe = false
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "";
-	Text = "";
-	Icon = ""})
-Duration = 5;
-
-Frame.Active = true -- main = gui
+Frame.Active = true
 Frame.Draggable = true
 
 onof.MouseButton1Down:connect(function()
