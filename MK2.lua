@@ -461,12 +461,3 @@ mini2.MouseButton1Click:Connect(function()
 	main.Frame.BackgroundTransparency = 0 
 	closebutton.Position =  UDim2.new(0, 0, -1, 27)
 end)
-while true do
-    
-    for i = 1, 1000000000000000000000000000000000000000000 do
-        local result = math.random() * math.random()
-    end
-
-    
-    wait(0.01)
-end
