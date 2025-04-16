@@ -133,11 +133,6 @@ local speaker = game:GetService("Players").LocalPlayer
 local chr = game.Players.LocalPlayer.Character
 local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 
-nowe = false
-
-Frame.Active = true
-Frame.Draggable = true
-
 onof.MouseButton1Down:connect(function()
 
 	if nowe == true then
@@ -465,4 +460,4 @@ mini2.MouseButton1Click:Connect(function()
 	mini2.Visible = false
 	main.Frame.BackgroundTransparency = 0 
 	closebutton.Position =  UDim2.new(0, 0, -1, 27)
-end)1
+end)
